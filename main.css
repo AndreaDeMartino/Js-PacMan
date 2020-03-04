@@ -18,7 +18,7 @@ body{
   width: 500px;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 .jumbotron img{
@@ -30,7 +30,7 @@ body{
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 60px;
   background-color: black;
 }
 
@@ -87,6 +87,20 @@ body{
 .col-1.rotate-up:hover{
   background-image: url('img/packup.jpg');
   background-size: 30%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.game-over:hover{
+  background-image: url('img/over.jpg');
+  background-size: 100%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.win:hover{
+  background-image: url('img/win.png');
+  background-size: 50%;
   background-position: center;
   background-repeat:no-repeat;
 }
