@@ -1,5 +1,92 @@
+/* General Rules */
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
+  /* DEBUG */
+  /* color: white; */
+}
+
+body{
+  background-image: url('img/back.jpg');
+  background-size: 100%;
+  background-position: center;
+}
+
+/* Header */
+.jumbotron{
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.jumbotron img{
+  height: 100px;
+}
+
+/* Main */
+#main-pack{
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 80px;
+  background-color: black;
+}
+
+/* Utility */
+.bfull{
+  border: 2px solid blue;
+}
+
+.btop{
+  border-top: 2px solid blue;
+}
+
+.brx{
+  border-right: 2px solid blue;
+}
+
+.bbot{
+  border-bottom: 2px solid blue;
+}
+
+.blx{
+  border-left: 2px solid blue;
+}
+
+/* Backgrounds */
+.col-1{
+  background-image: url('img/heat.jpeg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.col-1:hover{
+  background-image: url('img/packman.jpeg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.col-1.rotate-lx:hover{
+  background-image: url('img/packleft.jpg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.col-1.rotate-dw:hover{
+  background-image: url('img/packdown.jpg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.col-1.rotate-up:hover{
+  background-image: url('img/packup.jpg');
+  background-size: 30%;
+  background-position: center;
+  background-repeat:no-repeat;
 }
