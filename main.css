@@ -59,6 +59,10 @@ p{
   border-left: 2px solid blue;
 }
 
+.relative{
+  position: relative;
+}
+
 /* Backgrounds */
 .col-1{
   background-image: url('img/heat.jpeg');
@@ -107,4 +111,79 @@ p{
   background-size: 50%;
   background-position: center;
   background-repeat:no-repeat;
+}
+
+
+.phantom{
+  position: absolute;
+  height: 80%;
+}
+
+.phantom-rose{
+  left: 15px;
+  top: 5px;
+  animation: rose 5s linear infinite;
+}
+
+.phantom-red{
+  top: 15px;
+  left: 15px;
+  animation: red 2s linear infinite;
+}
+
+.phantom-green{
+  left: 540px;
+  top: 5px;
+  animation: green 4s linear infinite;
+}
+
+@keyframes rose{
+  0%{
+    left: 15px;
+    top: 5px;
+  }
+
+  50%{
+    left: 850px;
+    top: 5px;
+  }
+
+  100%{
+    left: 15px;
+    top: 5px;
+  }
+}
+
+@keyframes red{
+  0%{
+    top: 15px;
+    left: 15px;
+  }
+
+  50%{
+    left: 15px;
+    top: 200px;
+  }
+
+  100%{
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@keyframes green{
+  0%{
+    left: 540px;
+    top: 5px;
+  }
+
+  50%{
+    left: 15px;
+    top: 5px;
+  }
+
+  100%{
+    left: 540px;
+    top: 5px;
+  }
 }
