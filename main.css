@@ -66,35 +66,35 @@ p{
 /* Backgrounds */
 .col-1{
   background-image: url('img/heat.jpeg');
-  background-size: 30%;
+  background-size: 40%;
   background-position: center;
   background-repeat:no-repeat;
 }
 
 .col-1:hover{
   background-image: url('img/packman.jpeg');
-  background-size: 30%;
+  background-size: 40%;
   background-position: center;
   background-repeat:no-repeat;
 }
 
 .col-1.rotate-lx:hover{
   background-image: url('img/packleft.jpg');
-  background-size: 30%;
+  background-size: 40%;
   background-position: center;
   background-repeat:no-repeat;
 }
 
 .col-1.rotate-dw:hover{
   background-image: url('img/packdown.jpg');
-  background-size: 30%;
+  background-size: 40%;
   background-position: center;
   background-repeat:no-repeat;
 }
 
 .col-1.rotate-up:hover{
   background-image: url('img/packup.jpg');
-  background-size: 30%;
+  background-size: 40%;
   background-position: center;
   background-repeat:no-repeat;
 }
@@ -187,3 +187,60 @@ p{
     top: 5px;
   }
 }
+
+.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#packman{
+  position: absolute;
+  width: 40%;
+  left: 30px;
+  top: 5px;
+}
+
+.pack-down{
+  animation: down 0.3s linear both;
+  transform: rotate(90deg);
+}
+
+@keyframes down{
+   to{
+     top: 50px;
+   }
+}
+
+.pack-top{
+  animation: top 0.3s linear both;
+  transform: rotate(270deg);
+}
+
+@keyframes top{
+  from{
+    top: 50px;
+    left: 130px;
+  } 
+  
+  to{
+    left: 130px;
+    top: 5px;
+   }
+}
+
+.pack-rx{
+  animation: rx 0.5s linear both;
+  transform: rotate(0deg);
+}
+
+@keyframes rx{
+  from{
+    top: 50px;
+  }
+  to{
+    top: 50px;
+    left: 130px;
+   }
+}
+
