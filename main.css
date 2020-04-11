@@ -71,49 +71,7 @@ p{
   background-repeat:no-repeat;
 }
 
-.col-1:hover{
-  background-image: url('img/packman.jpeg');
-  background-size: 40%;
-  background-position: center;
-  background-repeat:no-repeat;
-}
-
-.col-1.rotate-lx:hover{
-  background-image: url('img/packleft.jpg');
-  background-size: 40%;
-  background-position: center;
-  background-repeat:no-repeat;
-}
-
-.col-1.rotate-dw:hover{
-  background-image: url('img/packdown.jpg');
-  background-size: 40%;
-  background-position: center;
-  background-repeat:no-repeat;
-}
-
-.col-1.rotate-up:hover{
-  background-image: url('img/packup.jpg');
-  background-size: 40%;
-  background-position: center;
-  background-repeat:no-repeat;
-}
-
-.game-over:hover{
-  background-image: url('img/over.jpg');
-  background-size: 100%;
-  background-position: center;
-  background-repeat:no-repeat;
-}
-
-.win:hover{
-  background-image: url('img/win.png');
-  background-size: 50%;
-  background-position: center;
-  background-repeat:no-repeat;
-}
-
-
+/* Phantom Move */
 .phantom{
   position: absolute;
   height: 80%;
@@ -188,59 +146,23 @@ p{
   }
 }
 
-.start{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Packman Keyboard */
 
 #packman{
   position: absolute;
   width: 40%;
   left: 30px;
   top: 5px;
+  z-index: 999;
 }
 
-.pack-down{
-  animation: down 0.3s linear both;
-  transform: rotate(90deg);
+.lose{
+  font-size: 80px;
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-50%);
+  display: none;
 }
-
-@keyframes down{
-   to{
-     top: 50px;
-   }
-}
-
-.pack-top{
-  animation: top 0.3s linear both;
-  transform: rotate(270deg);
-}
-
-@keyframes top{
-  from{
-    top: 50px;
-    left: 130px;
-  } 
-  
-  to{
-    left: 130px;
-    top: 5px;
-   }
-}
-
-.pack-rx{
-  animation: rx 0.5s linear both;
-  transform: rotate(0deg);
-}
-
-@keyframes rx{
-  from{
-    top: 50px;
-  }
-  to{
-    top: 50px;
-    left: 130px;
-   }
-}
-
