@@ -38,6 +38,17 @@ p{
   background-color: black;
 }
 
+.lose{
+  font-size: 80px;
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
 /* Utility */
 .bfull{
   border: 2px solid blue;
@@ -156,13 +167,3 @@ p{
   z-index: 999;
 }
 
-.lose{
-  font-size: 80px;
-  color: yellow;
-  font-family: 'Press Start 2P', cursive;
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%,-50%);
-  display: none;
-}
