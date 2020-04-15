@@ -1,46 +1,9 @@
-// var phantomRose = document.getElementById('phantom-rose__lose');
-// var phantomRed = document.getElementById('phantom-red__lose');
-// var phantomGreen = document.getElementById('phantom-green__lose');
-// var gameScreen = document.getElementById('main-pack');
-
-// // Phantom move
-// phantomRose.addEventListener('mouseover',
-//   function(){
-//     gameScreen.style.opacity = '0.5';
-//     gameScreen.style.pointerEvents = 'none'; 
-//     alert('Ops.... Hai perso!!!');
-
-//   }
-//   )
-
-//   phantomRed.addEventListener('mouseover',
-//   function(){
-
-//     gameScreen.style.opacity = '0.5';
-//     gameScreen.style.pointerEvents = 'none'; 
-//     alert('Ops.... Hai perso!!!');
-
-//   }
-//   )
-
-//   phantomGreen.addEventListener('mouseover',
-//   function(){
-
-//     gameScreen.style.opacity = '0.5';
-//     gameScreen.style.pointerEvents = 'none'; 
-//     alert('Ops.... Hai perso!!!');
-
-//   }
-//   )
-
-
 // Packman Move
 
 var packImg = $('#packman');
 console.log('Start position', packImg.position());
 
 document.onkeydown = moving;
-
 function moving(e) {
   
   e = e || window.event;
@@ -50,8 +13,6 @@ function moving(e) {
       packImg.animate({ top: "-=50px" }, 500 ).css('transform',
       'rotate(-90deg)')
       console.log(packImg.position());
-      
-      
       
   }
   else if (e.keyCode == '40') {
@@ -71,10 +32,8 @@ function moving(e) {
       // right arrow
       packImg.animate({ left: "+=100px" }, 500 ).css('transform',
       'rotate(0deg)');
-      console.log(packImg.position());
-      
+      console.log(packImg.position());   
   }
-
 }
 
 // Phantoms
