@@ -1,8 +1,8 @@
-# 	BOOLFIX: Extra Mobile Version ## 
+# BoolMan: MiniGame ## 
 
 > 
 >
-> ##### *:open_file_folder: File Name*:  BoolFlix-Bonus :open_file_folder:
+> ##### *:open_file_folder: File Name*:  html-css-12bool :open_file_folder:
 >
 > 
 
@@ -10,7 +10,7 @@
 
 **Project:** 
 
-Pac-Man MiniGame
+Pac-Man | MiniGame
 
 ### :computer: Languages and Libraries:
 
